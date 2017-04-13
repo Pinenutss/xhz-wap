@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>周边环境详情</title>
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!--分享使用-->
+	<meta itemprop="name" content="" />
+	<meta itemprop="description" name="description" content="" />
+	<meta itemprop="image" content="img_url" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body class="white">
+
+	<header>
+		<div class="nav-wrap clearfix">
+			<a herf="javascript:void(0)" class="link pull-left" id="index"><i class="icon-nav icon-nav-pop"></i></a>
+			<a href="home.html" class="link pull-right"><i class="icon-nav icon-nav-home"></i></a>
+			<span class="title"><em class="bg"></em></span>
+		</div>
+	</header>
+
+	<div class="gallery" id="gywl" v-cloak>
+		<div class="wrap">
+			<h4 class="title">{{gywl.ArticleTitle}}</h4>
+			<div class="photo bg" style="background-image:url({{gywl.CoverSmallImage}})"></div>
+			<p class="describe">{{{gywl.ArticleContent}}}</p>
+		</div>
+	</div>
+
+
+	<div id="_footer"></div>
+	<script src="lib/jquery-2.1.4.min.js"></script>
+	<script src="lib/vue.min.js"></script>
+	<script src="lib/judge.js"></script>
+	<script src="lib/swiper.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/gywl-details.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>黑龙滩长岛未来城</title>
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!--分享使用-->
+	<meta itemprop="name" content="" />
+	<meta itemprop="description" name="description" content="" />
+	<meta itemprop="image" content="img_url" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+</head>
+
+<body class="white pb-15625">
+
+	<header>
+		<div class="nav-wrap clearfix">
+			<a herf="javascript:void(0)" class="link pull-left" id="index"><i class="icon-nav icon-nav-pop"></i></a>
+			<a href="home.html" class="link pull-right"><i class="icon-nav icon-nav-home"></i></a>
+			<span class="title"><em class="bg"></em></span>
+		</div>
+	</header>
+	<div class="tab_Content active">
+		<div class="gallery" id="hltcdwlc1" v-cloak>
+			<div class="wrap">
+				<div class="swiper-container" id="swiper_container_1">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" v-for="hltcdwlc in hltcdwlcs1">
+							<h4 class="title">{{hltcdwlc.AlbumTypeName}}</h4>
+							<div class="photo bg" style="background-image:url({{hltcdwlc.CoverImage}})"></div>
+							<p class="describe">鲜花小镇：建面约4.9万㎡，规划有英迪格酒店、客栈、餐厅、咖啡厅等</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="tab_Content">
+		<div class="gallery" id="hltcdwlc2" v-cloak>
+			<div class="wrap">
+				<div class="swiper-container" id="swiper_container_2">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" v-for="hltcdwlc in hltcdwlcs2">
+							<h4 class="title">{{hltcdwlc.AlbumTypeName}}</h4>
+							<div class="photo bg" style="background-image:url({{hltcdwlc.CoverImage}})"></div>
+							<p class="describe">生态运动公园：建面约4.9万㎡，规划有英迪格酒店、客栈、餐厅、咖啡厅等</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="tab_Content">
+		<div class="gallery" id="hltcdwlc3" v-cloak>
+			<div class="wrap">
+				<div class="swiper-container" id="swiper_container_3">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" v-for="hltcdwlc in hltcdwlcs3">
+							<h4 class="title">{{hltcdwlc.AlbumTypeName}}</h4>
+							<div class="photo bg" style="background-image:url({{hltcdwlc.CoverImage}})"></div>
+							<p class="describe">生态观光农场：建面约4.9万㎡，规划有英迪格酒店、客栈、餐厅、咖啡厅等</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="tab_Content">
+		<div class="gallery" id="hltcdwlc4" v-cloak>
+			<div class="wrap">
+				<div class="swiper-container" id="swiper_container_4">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" v-for="hltcdwlc in hltcdwlcs4">
+							<h4 class="title">{{hltcdwlc.AlbumTypeName}}</h4>
+							<div class="photo bg" style="background-image:url({{hltcdwlc.CoverImage}})"></div>
+							<p class="describe">洲际酒店：建面约4.9万㎡，规划有英迪格酒店、客栈、餐厅、咖啡厅等</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="gallery-type-wrap">
+		<div class="gallery-type tabTrigger active">鲜花小镇</div>
+		<div class="gallery-type tabTrigger">生态运动公园</div>
+		<div class="gallery-type tabTrigger">生态农场</div>
+		<div class="gallery-type tabTrigger">洲际酒店</div>
+	</footer>
+
+	<!-- <div class="home-banner">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide bg">slider1</div>
+				<div class="swiper-slide bg">slider2</div>
+				<div class="swiper-slide bg">slider3</div>
+			</div>
+			<div class="swiper-pagination" id="home-swiper-pagination"></div>
+		</div>
+	</div> -->
+
+
+
+	<div id="_footer"></div>
+	<script src="lib/jquery-2.1.4.min.js"></script>
+	<script src="lib/vue.min.js"></script>
+	<script src="lib/judge.js"></script>
+	<script src="lib/swiper.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/hltcdwlc.js"></script>
+</body>
+
+</html>

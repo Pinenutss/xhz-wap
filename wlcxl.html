@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>长岛未来城</title>
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!--分享使用-->
+	<meta itemprop="name" content="" />
+	<meta itemprop="description" name="description" content="" />
+	<meta itemprop="image" content="img_url" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+</head>
+
+<body class="white">
+
+	<header>
+		<div class="nav-wrap clearfix">
+			<a herf="javascript:void(0)" class="link pull-left" id="index"><i class="icon-nav icon-nav-pop"></i></a>
+			<a href="home.html" class="link pull-right"><i class="icon-nav icon-nav-home"></i></a>
+			<span class="title"><em class="bg"></em></span>
+		</div>
+	</header>
+	<div class="wrap" id="cdwlc" v-cloak>
+		<a href="wlcxl-details.html?id={{cdwlc.Id}}"  v-for="cdwlc in cdwlcs">
+		<div class="activity-item">
+
+			<div class="activity-img bg" style="background-image:url({{cdwlc.CoverSmallImage}})"></div>
+			<div class="left">
+				<h4>{{cdwlc.ArticleTitle}}</h4>
+				<h5>{{cdwlc.CoverFont}}</h5>
+			</div>
+
+		</div>
+		</a>
+		<!-- <div class="activity-item">
+			<div class="activity-img bg" style="background-image:url(http://usr.im/164x164)"></div>
+			<div class="left">
+				<h4>眉山黑龙滩长岛国际旅游度假区项目入选</h4>
+				<h5>黑龙滩长岛国际旅游度假区项目（简称长岛项目）总投资100亿元，是成都新世纪会展集团投资打</h5>
+			</div>
+		</div>
+		<div class="activity-item">
+			<div class="activity-img bg" style="background-image:url(http://usr.im/164x164)"></div>
+			<div class="left">
+				<h4>眉山黑龙滩长岛国际旅游度假区项目入选</h4>
+				<h5>黑龙滩长岛国际旅游度假区项目（简称长岛项目）总投资100亿元，是成都新世纪会展集团投资打</h5>
+			</div>
+		</div> -->
+	</div>
+
+
+	<div id="_footer"></div>
+	<script src="lib/jquery-2.1.4.min.js"></script>
+	<script src="lib/vue.min.js"></script>
+	<script src="lib/judge.js"></script>
+	<script src="lib/swiper.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/wlcxl.js"></script>
+</body>
+
+</html>

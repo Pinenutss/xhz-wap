@@ -1,0 +1,496 @@
+@charset "UTF-8";
+body {
+    background-color: #e9e9e9;
+    padding-top: 1.4rem;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.mt1 {
+    margin-top: 1rem;
+}
+
+.pb1 {
+    padding-bottom: 1rem;
+}
+
+.pb-15625 {
+    padding-bottom: 1.5625rem !important;
+}
+.pdb-15{
+   padding-bottom: 1.5rem !important;
+}
+.bg {
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wrap {
+    padding: 0 .4rem;
+}
+
+.wrap-text {
+    padding: .781rem;
+}
+
+.wrap-text img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+/********************弹出层 pop****************************************/
+
+.pop {
+   display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.94);
+    margin-top: 1.4rem;
+    padding-bottom: 1.16rem;
+    /*opacity: 0;
+    visibility: hidden;
+    /*display: none;*/
+    transition: all .1s ease-in;
+    -webkit-transition: all .1s ease-in;
+    overflow: hidden;
+    overflow-y: scroll;
+    z-index: 9999;
+}
+
+.pop.show {
+    display: block;
+}
+
+.pop section {
+    padding: 0rem 0;
+    margin-bottom: 1.2rem;
+}
+
+.pop section:nth-child(1) {
+    padding-top: .2rem;
+}
+
+.pop .index-title {
+    font-size: 14px;
+    text-align: center;
+    /*width: 2.1rem;*/
+    height: .65rem;
+    line-height: .65rem;
+    /*background-color: #62c2d0;*/
+    margin: 0.3rem auto;
+    color: #fff;
+}
+.pop .index-title span{
+  padding: .1rem .2rem;
+  background-color: #62c2d0;
+}
+.pop .title a {
+    color: #fff;
+    display: block;
+}
+
+.pop .title-2 {
+    text-align: center;
+}
+
+.pop .title-2 a {
+    display: inline-block;
+    padding: .15rem .2rem;
+    text-align: center;
+    color: #575959;
+    font-size: 14px;
+}
+
+.pop a:active {
+    background-color: rgba(100, 100, 100, 0.2);
+}
+
+
+/*  header 公共头部*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.4rem;
+    background-color: #fff;
+    /*背景色*/
+    z-index: 10;
+    border: 0px;
+}
+
+header .nav-wrap .link {
+    width: 1.16rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    display: block;
+    text-align: center;
+    color: #fff;
+    /*左右按钮颜色*/
+    font-size: 22px;
+    position: relative;
+}
+
+header .nav-wrap .pull-left {
+    padding-left: .2rem;
+}
+
+header .nav-wrap .pull-right {
+    padding-right: .2rem;
+}
+
+header .nav-wrap .link span {
+    font-size: 14px;
+    display: block;
+}
+
+header .nav-wrap .link:active {
+    background-color: #eee;
+}
+
+header .nav-wrap .title {
+    display: block;
+    text-align: center;
+    color: #fff;
+    /*标题文字颜色*/
+    margin: 0 1.36rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    font-size: 18px;
+}
+
+header .nav-wrap .title em {
+    display: inline-block;
+    width: 2rem;
+    height: 1rem;
+    vertical-align: middle;
+    background-image: url(../img/slice/logo.png);
+}
+
+.icon-nav {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    width: .625rem;
+    height: .625rem;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.icon-nav-pop {
+    background-image: url(../img/slice/nav-pop.png);
+}
+
+.icon-nav-close {
+    background-image: url(../img/slice/nav-close.png);
+}
+
+.icon-nav-home {
+    background-image: url(../img/slice/nav-home.png);
+}
+
+.icon-nav-left {
+    background-image: url(../img/slice/nav-left.png);
+}
+
+
+/*home*/
+
+.home-banner {
+    position: fixed;
+    top: 1.4rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+}
+
+.home-banner .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 2rem;
+}
+
+.swiper-pagination-bullet {
+    background: #fff !important;
+    opacity: .6;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+
+/**************品牌简介*****************/
+
+.content {
+    margin: .4rem 0;
+}
+
+.content .title {
+    font-size: 16px;
+    color: #202020;
+    text-align: justify;
+    margin-bottom: .4rem;
+}
+
+.news-img {
+    width: 100%;
+    height: 4.375rem;
+}
+
+.content p {
+    color: #3a3a3a;
+    line-height: 24px;
+    text-align: justify;
+}
+
+
+/****************黑龙滩长岛未来城*******************/
+
+.tab_Content {
+    display: none;
+}
+
+.tab_Content.active {
+    display: block;
+}
+
+.gallery .title {
+    width: 100%;
+    height: 1.125rem;
+    line-height: 1.125rem;
+    text-align: center;
+    color: #202020;
+}
+
+.gallery .photo {
+    width: 100%;
+    height: 9.84rem;
+}
+
+.gallery .describe {
+    color: #3a3a3a;
+    font-size: 12px;
+    line-height: 22px;
+    padding: .781rem .4rem;
+}
+
+.gallery-type-wrap {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 1.5625rem;
+    line-height: 1.5625rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.gallery-type-wrap .gallery-type {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-flex: 1;
+    text-align: center;
+    color: #353535;
+    font-size: 12px;
+}
+
+.gallery-type-wrap .gallery-type.active {
+    border-bottom: 1px solid #62c2d0;
+}
+
+
+/****************竹海美墅*******************/
+
+.photo-item {
+    margin-bottom: .6rem;
+}
+
+.photo-item .photo {
+    width: 100%;
+    height: 4.375rem;
+    margin: .4rem 0;
+}
+
+.photo-item .type {
+    color: #202020;
+}
+
+.photo-item .size {
+    padding-left: 1em;
+    color: #b2b2b2;
+}
+
+
+/****************项目活动*******************/
+
+.activity-item {
+    margin: .4rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+}
+
+.activity-img {
+    width: 2.56rem;
+    height: 2.56rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 2.56rem;
+    flex: 0 0 2.56rem;
+}
+
+.activity-item .left {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-flex: 1;
+    padding-left: .34rem;
+}
+
+.activity-item .left h4 {
+    margin-top: .5rem;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    color: #202020;
+    font-size: 14px;
+}
+
+.activity-item .left h5 {
+    margin-top: .2rem;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #929292;
+    font-size: 12px;
+}
+
+
+/***************光影未来*************************/
+
+.block-wrap {
+    width: 100%;
+    /*display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;*/
+}
+
+.block-wrap .blocks-2 {
+    box-sizing: border-box;
+    /*-webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;*/
+    width: 50%;
+    margin-top: .4rem;
+    float: left;
+}
+
+.blocks-2 .gywl-img {
+    width: 4.35rem;
+    height: 4.35rem;
+}
+
+.blocks-2:nth-of-type(even) .gywl-img {
+    float: right;
+}
+
+.blocks-2:nth-of-type(odd) .gywl-img {
+    float: left;
+}
+
+.gywl-title {
+    text-align: left;
+    color: #202020;
+    margin-top: .4rem;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.blocks-2:nth-of-type(even) .gywl-title {
+    padding-left: .2rem;
+}
+.gallery .photo img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/*未来城概念*/
+.home-banner .swiper-slide>img{
+  display: block;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 2.8rem;
+}
+
+/******项目活动******/
+.xmhd-footer{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  background-color: #fff;
+  z-index: 100;
+}
+.xmhd-footer .trigger{
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  cursor: pointer;
+}
+.xmhd-footer .active{
+  border-bottom: 2px solid #62c2d0;
+}
+.tab_content{
+  display: none;
+}
+.tab_content.active{
+  display: block;
+}
+/* 华为手机兼容CSS*/
